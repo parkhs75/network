@@ -1,13 +1,18 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title> My First Webpage</title>
-    </head>   
-
-    <body>
-        $(document).ready(function(){
-        $(#header).load("import/220303_leaflet_test.html");
-        });
-        <h1> Hello World!</h1>
-        <p> This is a test page. </p>
-    </body>
+<head>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready( function() {
+	$("#contents").load("imort/220303_leaflet_test.html");
+});
+</script>
+</head>
+<body>
+<div id="header">이부분은 헤더</div>
+<div id="contents">
+<!-- 여기는 다른 html파일을 넣자 -->
+</div>
+<div id="footer">이부분은 푸터</div>
+</body>
 </html>
