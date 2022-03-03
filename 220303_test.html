@@ -1,20 +1,9 @@
-<!DOCTYPE HTML>
 <html>
-<head>
-<title> HTML include </title>
-	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript">   
-		$(document).ready( function() {
-			$("#footers").load("import/220302_leaflet_test.html");  // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
-			});
-	</script>
-</head>
+  <head>
+    <object type="text/html" data="import/220302_leaflet_test.html"></object> 
+  </head>
 
-<body>
-	<h1> Please. </h1>
-	<p> Success1. </p>
-	<div id="footers"></div>
-</body>
-
-
+  <body>
+     <div id="includedContent"></div>
+  </body>
 </html>
